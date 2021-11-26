@@ -29,10 +29,12 @@ let falso = false
 let ask = prompt("come ti chiami?");
 let i = 0
 
-while (i < invited.length && invited[i] == ask) {
+while (i < invited.length && falso == false) {
     
-    falso = true
-    nome = invited[i]
+    if (invited[i] == ask) {
+        falso = true
+        nome = invited[i]
+    }
     i++
 }
 
